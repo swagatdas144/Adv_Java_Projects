@@ -17,7 +17,7 @@ public class DBcon4 {
 				String bau=sc.nextLine();
 				System.out.println("enter book price:");
 				Double bpr=sc.nextDouble();
-				System.out.println("enter book quantity:");
+				System.out.println("Plz enter book quantity:");
 				int bqty=sc.nextInt();
 				Class.forName("oracle.jdbc.driver.OracleDriver");
 				Connection con=DriverManager.getConnection("jdbc:oracle:thin:@localhost:1522:orcl","system", "SWAGAT");
