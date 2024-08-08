@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+     <bean id="s2" class="com.swagat.spring.Student">
+    	<constructor-arg index="0" value="2"/> 
+    	<constructor-arg  index="1" value="rohit"/>
+    	<constructor-arg  index="2" value="gaikwad"/>
+    </bean>
+    <bean id="s1" class="com.swagat.spring.Student">
+    	<property name="Sdid" value="1" />
+    	<property name="Sdfname" value="swagat" />
+    		<property name="Sdlname" value="das" />
+    </bean>
+
+</beans>
+
+   
+
+
+
+	

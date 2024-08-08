@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+<style>
+    body {
+        background-color: #222;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        padding: 20px;
+    }
+    form {
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: #333;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+    input[type="text"],
+    input[type="password"] {
+        width: calc(100% - 20px);
+        padding: 10px;
+        margin-bottom: 10px;
+        background-color: #444;
+        border: none;
+        color: #fff;
+        border-radius: 5px;
+    }
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #f44336;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+    input[type="submit"]:hover {
+        background-color: #ff6659;
+    }
+    input[type="submit"]:focus {
+        outline: none;
+    }
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+        outline: none;
+        border: 2px solid #f44336;
+    }
+    h2 {
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="reg" method="post">
+        <label for="uname">USERNAME:</label>
+        <input type="text" id="uname" name="uname" required><br>
+        <label for="pword">PASSWORD:</label>
+        <input type="password" id="pword" name="pword" required><br>
+        <label for="fname">FIRSTNAME:</label>
+        <input type="text" id="fname" name="fname" required><br>
+        <label for="lname">LASTNAME:</label>
+        <input type="text" id="lname" name="lname" required><br>
+        <label for="addr">ADDRESS:</label>
+        <input type="text" id="addr" name="addr" required><br>
+        <label for="mid">MAILID:</label>
+        <input type="text" id="mid" name="mid" required><br>
+        <label for="phno">PHONENO:</label>
+        <input type="text" id="phno" name="phno" required><br>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

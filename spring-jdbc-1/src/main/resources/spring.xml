@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+<bean id="s1" class="com.nareshit.spring.Student">
+	<property name="sfname" value="swagat" />
+	<property name="slname" value="das" />
+	<property name="sphno" value="9337349749" />
+	
+</bean>
+</beans>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    form {
+        background-color: #fff;
+        padding: 20px;
+        width: 300px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    form label {
+        display: block;
+        margin-bottom: 6px;
+        color: #555;
+    }
+
+    form input[type="text"],
+    form input[type="password"],
+    form input[type="email"] {
+        width: calc(100% - 12px);
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 14px;
+    }
+
+    form input[type="submit"] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 16px;
+        width: 100%;
+    }
+
+    form input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+<form action="regn" method="post">
+    <h2>Student Registration</h2>
+    <label for="sdn">Student Name:</label>
+    <input type="text" id="sdn" name="sdn" required><br>
+    <label for="spsd">Student Password:</label>
+    <input type="password" id="spsd" name="spsd" required><br>
+    <label for="smid">Student Mail ID:</label>
+    <input type="email" id="smid" name="smid" required><br>
+    <label for="sdphno">Student Phone No:</label>
+    <input type="text" id="sdphno" name="sdphno" required><br>
+    <input type="submit" value="Register">
+</form>
+</body>
+</html>
