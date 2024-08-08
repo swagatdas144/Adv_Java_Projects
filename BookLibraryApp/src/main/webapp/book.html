@@ -1,17 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+    <meta charset="ISO-8859-1">
+    <title>Add Book</title>
+    <style>
+        body {
+            background-color: black;
+            color: blue;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 5%;
+        }
+
+        form {
+            display: inline-block;
+            background-color: #222;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px blue;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid blue;
+            border-radius: 5px;
+            background-color: #333;
+            color: blue;
+        }
+
+        input[type="submit"] {
+            background-color: blue;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1e90ff;
+        }
+    </style>
 </head>
 <body>
-<form action="add" method="post" >
-BOOKCODE:<input type="text" name="bcode"><br>
-BOOKNAME:<input type="text" name="bname"><br>
-BOOKAUTHOR:<input type="text" name="bauthor"><br>
-BOOKPRICE:<input type="text" name="bprice"><br>
-BOOKQTY:<input type="text" name="bqty"><br>
-<input type="submit" value="ADDBOOK">
-</form>
+    <form action="add" method="post">
+        <label for="bcode">BOOK CODE:</label><br>
+        <input type="text" id="bcode" name="bcode"><br>
+        <label for="bname">BOOK NAME:</label><br>
+        <input type="text" id="bname" name="bname"><br>
+        <label for="bauthor">BOOK AUTHOR:</label><br>
+        <input type="text" id="bauthor" name="bauthor"><br>
+        <label for="bprice">BOOK PRICE:</label><br>
+        <input type="text" id="bprice" name="bprice"><br>
+        <label for="bqty">BOOK QTY:</label><br>
+        <input type="text" id="bqty" name="bqty"><br>
+        <input type="submit" value="ADDBOOK">
+    </form>
 </body>
 </html>

@@ -1,14 +1,59 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
-<title>Insert title here</title>
+    <meta charset="ISO-8859-1">
+    <title>Admin Login</title>
+    <style>
+        body {
+            background-color: black;
+            color: green;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 10%;
+        }
+
+        form {
+            display: inline-block;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px green;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid green;
+            border-radius: 5px;
+            background-color: #222;
+            color: green;
+        }
+
+        input[type="submit"] {
+            background-color: green;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #00cc00;
+        }
+    </style>
 </head>
 <body>
-<form action="admin" method="post">
-USERNAME:<input type="text" name="uname"><br>
-PASSWORD:<input type="password" name=pword><br>
-<input type="submit" value="LOGIN">
-</form>
+    <form action="admin" method="post">
+        <label for="uname">USERNAME:</label><br>
+        <input type="text" id="uname" name="uname"><br>
+        <label for="pword">PASSWORD:</label><br>
+        <input type="password" id="pword" name="pword"><br>
+        <input type="submit" value="LOGIN">
+    </form>
 </body>
 </html>
